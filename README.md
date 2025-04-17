@@ -12,7 +12,30 @@ This is a personal portfolio project developed using **React**, **Bootstrap**, a
 
 ##  Project Structure
 
-src/ ├── components/ │ ├── Header.jsx │ └── Footer.jsx │ ├── pages/ │ ├── Home.jsx │ ├── Skill.jsx │ ├── Project.jsx │ ├── Contact.jsx │ └── Resume.jsx │ ├── App.jsx └── index.js
+- `/components`  
+  - `Header`
+      - `Header.jsx`
+      - `Header.css`
+  - `Footer`  
+      - `Footer.jsx`
+      - `Footer.css`
+        
+- `/pages
+  - `Home`
+      - `Home.jsx`
+      - `Home.css`  
+  - `Skill`
+      - `Skill.jsx`
+      - `Skill.css`  
+  - `Project`
+      - `Project.jsx`
+      - `Project.css`
+  - `Contact`
+      - `Contact.jsx`
+      - `Contact.css` 
+  - `Resume`
+      - `Resume.jsx`
+      - `Resume.css` 
 
 ##  Technologies Used
 
