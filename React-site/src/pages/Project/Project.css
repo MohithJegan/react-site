@@ -1,0 +1,217 @@
+/* Base Styles */
+.projects-main {
+    background: linear-gradient(135deg, #1a1a1a, #000);
+    min-height: 100vh;
+    padding: 80px 0;
+    color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.projects-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #00ff88, #00bfff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.projects-subtitle {
+    font-size: 1.25rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Project Image */
+.project-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+}
+
+/* Project Content */
+.project-content {
+    padding: 25px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-duration {
+    background: rgba(0, 191, 255, 0.1);
+    color: #00bfff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+.project-description {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Technologies */
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    background: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.project-link {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.project-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.project-link.demo {
+    background: linear-gradient(90deg, #00ff88, #00bfff);
+    color: #1a1a1a;
+}
+
+.project-link.demo:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-header {
+        margin-bottom: 40px;
+    }
+    
+    .gradient-text {
+        font-size: 2.5rem;
+    }
+    
+    .projects-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-main {
+        padding: 60px 0;
+    }
+    
+    .gradient-text {
+        font-size: 2rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .project-link {
+        justify-content: center;
+    }
+}
