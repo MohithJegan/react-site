@@ -20,7 +20,7 @@ This is a personal portfolio project developed using **React**, **Bootstrap**, a
       - `Footer.jsx`
       - `Footer.css`
         
-- `/pages
+- `/pages`
   - `Home`
       - `Home.jsx`
       - `Home.css`  
